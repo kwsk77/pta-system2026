@@ -57,7 +57,13 @@ table {
   max-width: 38px;
   white-space: nowrap;
 }
-
+#list th:nth-child(3),
+#list td:nth-child(3) {
+  width: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  white-space: nowrap;
+}
 #list th:nth-child(11),
 #list td:nth-child(11) {
   width: 42px;
@@ -178,12 +184,7 @@ button.delete {
 /* ============================
    加入状況（PTA / 共済 / 安互）
 ============================ */
-.join-row{
-    width: 40px;
-
-}
-
-    
+.join-row,
 .edit-join-row,
 .child-join-row {
   display: flex;
