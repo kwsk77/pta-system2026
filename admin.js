@@ -155,7 +155,7 @@ document.getElementById("searchClass").addEventListener("input", applyGradeClass
    CSV
 ============================ */
 document.getElementById("downloadCsv").addEventListener("click", () => {
-  let csv = "保護者名,メール,電話,子ども,学年,クラス,番号,共済,安互\n";
+  let csv = "保護者名,メール,電話,子ども,学年,クラス,番号,共済,保険\n";
 
   currentView.forEach(row => {
     csv += `${row.parentName},${row.email},${row.phone},${row.childName},${row.grade},${row.class},${row.studentId},${row.joinKyosai ? "○" : ""},${row.joinhoken ? "○" : ""}\n`;
@@ -253,7 +253,7 @@ window.editEntry = function (docId) {
   document.getElementById("editPhone").value = data.phone || "";
   document.getElementById("editRole").value = data.role || "";
 
-  // 安互（保護者のみ）
+  // 保険（保護者のみ）
   const hokenVal = data.joinhoken ? "yes" : "no";
   document.querySelector(`input[name="editJoinhoken"][value="${hokenVal}"]`).checked = true;
 
