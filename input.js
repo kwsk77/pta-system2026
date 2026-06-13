@@ -48,8 +48,9 @@ document.getElementById("ptaForm").addEventListener("submit", async (e) => {
   if (!parentName) return alert("保護者名を入力してください。");
   if (!email) return alert("メールアドレスを入力してください。");
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) return alert("メールアドレスの形式が正しくありません。");
+ /* const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;\
+  if (!emailPattern.test(email)) return alert("メールアドレスの形式が正しくありません。");*/
+//プロトタイプなので制限を外しておく
 
   if (!phone) return alert("電話番号を入力してください。");
 
