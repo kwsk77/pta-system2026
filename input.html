@@ -86,27 +86,24 @@
   border-radius: 6px;
   margin-top: 10px;
 }
-/* ===== Safari 完全対応：ラジオボタン縦位置を強制中央揃え ===== */
-.join-row label,
-.child-join-row label,
-.radio-label {
+/* ===== Safari 完全対応：input.html 専用ラジオボタン補正 ===== */
+.radio-row label {
   position: relative !important;
-  padding-left: 22px !important; /* ← ラジオの分だけ余白 */
-  line-height: 22px !important;  /* ← Safari が無視しない高さ */
+  padding-left: 22px !important;
+  line-height: 22px !important;
   display: inline-block !important;
 }
 
-.join-row input[type="radio"],
-.child-join-row input[type="radio"],
-.radio-label input[type="radio"] {
+.radio-row input[type="radio"] {
   position: absolute !important;
   left: 0 !important;
   top: 50% !important;
-  transform: translateY(-50%) !important; /* ← Safari でも効く中央揃え */
+  transform: translateY(-50%) !important;
   margin: 0 !important;
   width: 16px !important;
   height: 16px !important;
 }
+
 
   </style>
 </head>
