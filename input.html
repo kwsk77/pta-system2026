@@ -88,8 +88,8 @@
 }
 /* ===== Safari 完全対応：ラジオボタン縦位置を強制中央揃え ===== */
 .join-row label,
-.edit-join-row label,
-.child-join-row label {
+.child-join-row label,
+.radio-label {
   position: relative !important;
   padding-left: 22px !important; /* ← ラジオの分だけ余白 */
   line-height: 22px !important;  /* ← Safari が無視しない高さ */
@@ -97,8 +97,8 @@
 }
 
 .join-row input[type="radio"],
-.edit-join-row input[type="radio"],
-.child-join-row input[type="radio"] {
+.child-join-row input[type="radio"],
+.radio-label input[type="radio"] {
   position: absolute !important;
   left: 0 !important;
   top: 50% !important;
